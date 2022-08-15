@@ -19,7 +19,8 @@ class App extends Component {
   .then(users => {this.setState({ robots: users})});		
 }
 
-	onSeachChange = (event) => {
+	onSearchChange = (event) => {
+		console.log(event.target.value);
 		this.setState({ searchfield: event.target.value })
 	}
 	render() {
